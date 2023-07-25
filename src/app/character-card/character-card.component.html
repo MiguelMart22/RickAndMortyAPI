@@ -1,0 +1,60 @@
+<div *ngIf="isInputSearched !== 'true' ">
+<div class="grid-container">
+<div *ngFor="let characterCard of characters;"  class="uk-card uk-card-default uk-width-1-2@m" id="{{characterCard.id}}">
+    
+    <div class="uk-card-header">
+            <h3 class="uk-card-title uk-margin-remove-bottom">{{characterCard.name}}</h3>
+            <p class="uk-text-meta uk-margin-remove-top"><time>{{characterCard.status}}</time> | <time>{{characterCard.species}}</time></p>
+    </div>
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="{{characterCard.imgUrl}}" width="1800" height="1200" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<br>
+<p uk-margin style="    margin-top: 20px;
+left: 40%;
+position: absolute;
+top: 105%;">
+    <button (click)="beforePage()" class="uk-button uk-button-default" style="margin-right: 13px;">Previous Page</button>
+    <button (click)="nextPage()" class="uk-button uk-button-default">Next Page</button>
+</p>
+</div>
+<div *ngIf="isInputSearched === 'true' ">
+    <div class="grid-container">
+    <div *ngFor="let characterCard of characters;"  class="uk-card uk-card-default uk-width-1-2@m" id="{{characterCard.id}}">
+        <div *ngIf="characterCard.id !== null">
+        <div class="uk-card-header">
+                <h3 class="uk-card-title uk-margin-remove-bottom">{{characterCard.name}}</h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time>{{characterCard.status}}</time> | <time>{{characterCard.species}}</time></p>
+        </div>
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="{{characterCard.imgUrl}}" width="1800" height="1200" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <p uk-margin style="    margin-top: 20px;
+    left: 40%;
+    position: absolute;
+    top: 105%;">
+        <button (click)="beforePageSearch()" class="uk-button uk-button-default" style="margin-right: 13px;">Previous Page</button>
+        <button (click)="nextPageSearch()" class="uk-button uk-button-default">Next Page</button>
+    </p>
+    </div>
+
+
+ 

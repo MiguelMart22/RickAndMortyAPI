@@ -1,0 +1,8 @@
+.uk-navbar-container  {
+    background-color: #ebebeb96;
+    margin-left: 5px;
+}
+
+.uk-navbar-item uk-logo uk-active {
+    margin-left: 15px;
+}
