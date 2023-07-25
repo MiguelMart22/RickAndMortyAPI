@@ -1,7 +1,9 @@
-# FalloutAPI
-
+# Rick And Morty API
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
+Simple project that uses Rick And Morty API to generate automatic cards from the series characters, the project contains multiples functions as advance/back buttons and search function.
+
+Thanks for taking some time to view my project and I hope you like it! Salutations.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
